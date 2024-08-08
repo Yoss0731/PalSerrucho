@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+.form-container input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form-container input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+.oculto {
+    display: none;
+}
+
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn.volver {
+    background-color: #2196F3;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn.editar {
+    background-color: #FFC107;
+}
+
+.btn.guardar {
+    background-color: #4CAF50;
+}
+
+.btn.cancelar {
+    background-color: #FF5722;
+}
+
+#mensaje {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}

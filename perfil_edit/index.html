@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Perfil de Usuario</h1>
+        <form id="formularioPerfil" class="form-container">
+            <div class="form-group">
+                <label for="nombreCompleto">Nombre Completo</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" value="Juan Pérez" readonly>
+            </div>
+            <div class="form-group">
+                <label for="correoElectronico">Correo Electrónico</label>
+                <input type="email" id="correoElectronico" name="correoElectronico" value="juan.perez@correo.com"
+                    readonly>
+            </div>
+            <div class="form-group">
+                <label for="contrasenaActual">Contraseña Actual</label>
+                <input type="password" id="contrasenaActual" name="contrasenaActual" placeholder="********" readonly>
+            </div>
+            <div class="form-group oculto" id="campoNuevaContrasena">
+                <label for="nuevaContrasena">Nueva Contraseña</label>
+                <input type="password" id="nuevaContrasena" name="nuevaContrasena" minlength="8">
+            </div>
+            <div class="action-buttons">
+                <button type="button" class="btn editar" id="botonEditar">Editar</button>
+                <button type="submit" class="btn guardar oculto" id="botonGuardar">Guardar Cambios</button>
+                <button type="button" class="btn cancelar oculto" id="botonCancelar">Cancelar</button>
+                <button type="button" class="btn volver" id="botonVolver">Volver a la Lista de Gastos</button>
+            </div>
+        </form>
+        <div id="mensaje"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
